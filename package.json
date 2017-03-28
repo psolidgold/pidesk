@@ -1,0 +1,28 @@
+{
+  "name": "pidesk",
+  "version": "1.0.0",
+  "description": "Control Standing Desk with Raspberry Pi and Websockets",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "rpio": "^0.9.16",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psolidgold/pidesk.git"
+  },
+  "keywords": [
+    "raspberry-pi"
+  ],
+  "author": "Patrick Gold",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/psolidgold/pidesk/issues"
+  },
+  "homepage": "https://github.com/psolidgold/pidesk#readme"
+}

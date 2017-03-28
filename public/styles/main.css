@@ -1,0 +1,11 @@
+body {
+	text-align: center;
+	margin-top: 3em;
+	background: #BADA55;
+  font-size: 100%;
+}
+
+button {
+  font-size: 2em;
+  padding: 0.5em 1em;
+}
