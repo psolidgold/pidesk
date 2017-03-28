@@ -4,7 +4,7 @@ server = require('http').createServer(app);
 io = require('socket.io').listen(server);	//web socket server
 rpio = require('rpio');
 
-server.listen(5555); //start the webserver on port 8080
+server.listen(5555); //start the webserver on port 5555
 app.use(express.static('public')); //tell the server that ./public/ contains the static webpages
 console.log("Starting express server at port: 5555");
 
@@ -30,7 +30,7 @@ io.sockets.on('connection', function (socket) { //gets called whenever a client 
     io.sockets.emit('status', { state: 'GOOD' }); //sends the updated status
   });
 
-  socket.on('deskDown', function (data) { //makes the socket react to 'deskUp' packets by calling this function
+  socket.on('deskDown', function (data) { //makes the socket react to 'deskDown' packets by calling this function
 
     console.log('Move Desk Down!');
 
