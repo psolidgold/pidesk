@@ -1,7 +1,8 @@
 var socket = io.connect();
 var statusEl = document.getElementById('socketStatus');
 
-socket.on('deskMoved', function (data) {
+socket.on('status', function (data) {
+  console.log('status', data);
   statusEl.innerHTML = data.state;
 });
 
